@@ -1,16 +1,44 @@
 <!doctype html>
-<html lang="{{ site.lang | default: "en" }}">
+<html lang="en">
   <head>
-    {% include meta.html %}
+    <meta charset="utf-8" />
+<meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    {% seo title=false %}
-    {% if page.title %}
-    <title>{{ page.title }}&#32;&#45;&#32;{{ site.description }}&#32;&#45;&#32;{{ site.title }}</title>
-    {% else %}
-    <title>{{ site.description }}&#32;&#45;&#32;{{ site.title }}</title>
-    {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css"/>
+<meta name="description" content="Software Engineer & Android Developer">
+<meta property="og:description" content="Software Engineer & Android Developer" />
+
+<meta name="author" content="Michael Gagujas" />
+
+
+<meta property="og:title" content="Archive" />
+<meta property="twitter:title" content="Archive" />
+
+
+
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Archive" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Software Engineer &amp; Android Developer" />
+<meta property="og:description" content="Software Engineer &amp; Android Developer" />
+<link rel="canonical" href="http://localhost:4000/archive/" />
+<meta property="og:url" content="http://localhost:4000/archive/" />
+<meta property="og:site_name" content="Michael Gagujas" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Archive" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Software Engineer &amp; Android Developer","headline":"Archive","url":"http://localhost:4000/archive/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    
+    <title>Archive&#32;&#45;&#32;Software Engineer & Android Developer&#32;&#45;&#32;Michael Gagujas</title>
+    
+
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/image/favicon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/image/favicon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/image/favicon-72x72.png">
@@ -30,7 +58,7 @@
     <meta name="msapplication-TileImage" content="/assets/image/favicon-144x144.png">
     <meta name="msapplication-config" content="/assets/image/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml"/>
+    <link rel="alternate" type="application/rss+xml" title="Michael Gagujas - Software Engineer & Android Developer" href="/feed.xml"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css" integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous" media="print" onload="this.media='all'"/>
     <link rel="stylesheet" href="https://cdn.plyr.io/3.6.5/plyr.css" media="print" onload="this.media='all'"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" media="print" onload="this.media='all'"/>
@@ -42,46 +70,50 @@
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar | absolute_url }}" width="70" height="70" /></a>
+          <a href="/" class="site-avatar"><img src="http://localhost:4000/assets/image/avatar.png" width="70" height="70" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <h1 class="site-name"><a href="/">Michael Gagujas</a></h1>
+            <p class="site-description">Software Engineer & Android Developer</p>
           </div>
 
           <nav class="nav-menu">
-            {% include navigation.html %}
+            
+  <a class="nav-menu-item" href="http://localhost:4000/content/2024/08/17/self-assessment/">Home</a>
+
+  <a class="nav-menu-item" href="http://localhost:4000/about">About</a>
+
+  <a class="nav-menu-item" href="http://localhost:4000/projects">Projects</a>
+
+  <a class="nav-menu-item" href="http://localhost:4000/search">Search</a>
+
+
           </nav>
         </header>
       </div>
     </div>
 
     <div id="main" role="main" class="container">
-      {{ content }}
+      <h1 id="archive">Archive</h1>
+
+<p>Browse all posts by month and year.</p>
+
+<h2>August 2024</h2>
+<ul>
+    
+      <li><a href="/content/2024/08/17/self-assessment/">Professional Self-Assessment</a></li>
+    
+  </ul>
+
+
     </div>
 
     <div class="wrapper-footer">
       <div class="container">
-        <footer class="footer">
-          {%- if site.footer_links -%}
-          <div class="social-icons">
-            {%- for footer_link in site.footer_links -%}
-            {%- if footer_link.url contains "://" -%}
-            {%- assign url = footer_link.url -%}
-            {%- else -%}
-            {%- assign url = footer_link.url | relative_url -%}
-            {%- endif -%}
-            <a class="social-icon" href="{{ url }}"><i class="{{ footer_link.icon | default: 'fa fa-link' }} fa-2x" title="{{ footer_link.title }}"></i></a>
-            {%- endfor -%}
-          </div>
-          {%- endif -%}
-
-          <div class="copyright">
-            {% if site.copyright %}
-            {{ site.copyright | markdownify }}
-            {% else %}
-            <p>&copy; {{ site.time | date: '%Y' }} {{ site.title | default: site.title }}. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/forever-jekyll/forever-jekyll" rel="nofollow">Forever Jekyll</a>.</p>
-            {% endif %}
+        <footer class="footer"><div class="social-icons"><a class="social-icon" href="/feed.xml"><i class="fa fa-rss-square fa-2x" title="Feed"></i></a><a class="social-icon" href="https://twitter.com/mmgagujas"><i class="fa fa-twitter-square fa-2x" title="Twitter"></i></a><a class="social-icon" href="https://github.com/mmgagujas"><i class="fa fa-github-square fa-2x" title="GitHub"></i></a></div><div class="copyright">
+            
+            <p>&copy; 2024 Michael Gagujas. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/forever-jekyll/forever-jekyll" rel="nofollow">Forever Jekyll</a>.</p>
+            
           </div>
         </footer>
       </div>
