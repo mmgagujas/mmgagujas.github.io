@@ -3,7 +3,6 @@ layout: page
 permalink: /gallery
 ---
   
-# Gallery
 
 Welcome to our gallery! Here are some of our favorite images.
 
