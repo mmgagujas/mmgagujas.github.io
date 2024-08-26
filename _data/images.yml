@@ -1,0 +1,22 @@
+- description: OpenGL Project
+  filename: EnhancedArtifact1.png
+- description: Old lights code
+  filename: 1-OriginalLightSetting.png
+- description: OOPclasses
+  filename: 2-OOPprinciples.png
+- description: LightConfig
+  filename: 3-LightConfig.png
+- description: Skybox
+  filename: 4-SkyboxPhoto.png
+- description: SceneManager
+  filename: 5-SceneManager.png
+- description: Binary Space Partitioning Tree
+  filename: 6-BSP.png
+- description: Frustum
+  filename: 7-Frustum.png
+- description: GetAll Function
+  filename: 8-GetAllFront.png
+- description: Distance
+  filename: 9-calculateDistance.png
+- description: Firefly
+  filename: 10-Firefly.png

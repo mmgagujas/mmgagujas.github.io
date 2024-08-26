@@ -39,8 +39,8 @@ navigation_links:
   - title: Projects
     url: /projects
 
-  - title: Search
-    url: /search
+  - title: Gallery
+    url: /gallery
 
 # Footer icons
 footer_links:
